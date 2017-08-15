@@ -16,7 +16,8 @@ There are a few things required to run the DraftSimulator as-is.  The applicatio
 - An Azure Application Insights tenant for application telemetry
 - Azure BLOB storage for the team logo images
 
-
+# Open Issues
+None known at this point.
 
 
 
