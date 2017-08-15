@@ -18,19 +18,3 @@ There are a few things required to run the DraftSimulator as-is.  The applicatio
 
 # Open Issues
 None known at this point.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Feel free to leverage the code in this repository (MIT license rights).  NO WARRANTIES EXPRESSED OR IMPLIED WITH THE USE OF THIS SOFTWARE/CODE.  Also, I do not provide support or troubleshooting for this code
