@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="54b49f6a-584e-4fc6-a9a0-8d127d7b0141" ChangeDateTime="05/17/2016 01:20:32">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[SelectedTeamID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SelectedDraftBallSeq" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1d7b448-b987-40b0-bc50-d701bd4cac97" ChangeDateTime="05/17/2016 01:20:37">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[Select]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SelectedTeamID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f121337c-1d75-42b3-ad9e-1ee35830c251" ChangeDateTime="05/26/2016 23:08:34">
+    <Property Name="ElementName" Value="[dbo].[tblStandings].[League]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblStandings]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LeagueID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7a5239fc-1468-462d-8bfe-0f9fb4563321" ChangeDateTime="06/20/2016 17:46:46">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[Latitude]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Country" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="20ea4db8-4f98-420e-a4c5-302722d99e5f" ChangeDateTime="06/20/2016 17:49:40">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[Country]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserCountry" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="54ad659e-c2bb-4910-ac62-c5c76735bb34" ChangeDateTime="06/20/2016 17:51:10">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[UserCountry]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DraftRunCountry" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="82fa4528-57e3-4618-b763-d7fae309b6de" ChangeDateTime="06/20/2016 17:51:17">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[Latitude]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DraftRunLatitude" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4867165f-febb-4421-9eb7-70e8ee2704d8" ChangeDateTime="06/20/2016 17:51:23">
+    <Property Name="ElementName" Value="[dbo].[tblDraftRun].[Longitude]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDraftRun]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DraftRunLongitude" />
+  </Operation>
+</Operations>

@@ -1,0 +1,132 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Draft Simulation</h2>
+
+
+<div class="panel-group" id="collapse">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-one" onclick="appInsights.trackEvent('User clicked on the first draft ball link - Ball=@ViewBag.DraftRun.Ball1');return true;">
+                    Draft Ball 1 Results
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-one" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>The first Draft Ball chosen is:&nbsp;&nbsp;</td>
+                        <td><img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball1 + ".png")" /></td>
+                    </tr>
+                </table>
+                <br />
+                <p>The following teams are in the running for the first pick based on the first draft ball:</p>
+                <table>
+                    @foreach (var item in ViewBag.DraftRun.TeamList1)
+                    {
+                        <tr>
+                            <td>@item.TeamCity @item.TeamName</td>
+                            <td><img src="@item.ImagePrimaryXSmallURL" /></td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-two" onclick="appInsights.trackEvent('User clicked on the second draft ball link - Balls = @(ViewBag.DraftRun.Ball1 + " | " + ViewBag.DraftRun.Ball2)');return true;">
+                    Draft Ball 2 Results
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-two" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>The first two Draft Balls chosen are:&nbsp;&nbsp;</td>
+                        <td><img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball1 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball2 + ".png")" /></td>
+                    </tr>
+                </table>
+                <br />
+                <p>The following teams are in the running for the first pick based on the first two draft balls:</p>
+                <table>
+                    @foreach (var item in ViewBag.DraftRun.TeamList2)
+                    {
+                        <tr>
+                            <td>@item.TeamCity @item.TeamName</td>
+                            <td><img src="@item.ImagePrimaryXSmallURL" /></td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#collapse" href="#collapse-three" onclick="appInsights.trackEvent('User clicked on the second draft ball link - Balls = @(ViewBag.DraftRun.Ball1 + " | " + ViewBag.DraftRun.Ball2 + " | " + ViewBag.DraftRun.Ball3)');return true;">
+                    Draft Ball 3 Results
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-three" class="panel-collapse collapse">
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>The first three Draft Balls chosen are:</td>
+                        <td><img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball1 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball2 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball3 + ".png")" /></td>
+                    </tr>
+                </table>
+                <br />
+                <p>The following teams are in the running for the first pick based on the first three draft balls:</p>
+                <table>
+                    @foreach (var item in ViewBag.DraftRun.TeamList3)
+                    {
+                        <tr>
+                            <td>@item.TeamCity @item.TeamName</td>
+                            <td><img src="@item.ImagePrimaryXSmallURL" /></td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#collapse" href="#collapse-four" onclick="appInsights.trackEvent('User clicked on the fourth draft ball link - Balls = @(ViewBag.DraftRun.Ball1 + " | " + ViewBag.DraftRun.Ball2 + " | " + ViewBag.DraftRun.Ball3 + " | " + ViewBag.DraftRun.Ball4)')';return true;">
+                        Draft Winner
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-four" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <table>
+                        <tr>
+                            <td>The Draft Balls selected are:&nbsp;&nbsp;</td>
+                            <td colspan="2"><img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball1 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball2 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball3 + ".png")" />&nbsp;<img src="@("https://draftsimulatorstorage.blob.core.windows.net/draftballs/SmallBall" + ViewBag.DraftRun.Ball4 + ".png")" /></td>
+                        </tr>
+                        <tr>
+                            <td>First Draft Pick goes to:</td>
+                            <td>@ViewBag.DraftRun.TeamList4[0].TeamCity @ViewBag.DraftRun.TeamList4[0].TeamName</td>
+                            <td rowspan="4"><img src="@ViewBag.DraftRun.TeamList4[0].ImagePrimaryNormalURL"></img></td>
+                        </tr>
+                        <tr>
+                            <td>Selected on Draft Chance Number:</td>
+                            <td>@ViewBag.DraftRun.TeamList4[0].TeamSeqNumber</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
