@@ -1,4 +1,4 @@
-###(Please note that this ReadMe file is not yet complete.  The intent is to provide you with all the instructions necessary to configure and deploy the DraftSimulator to your own Azure subscription, so please be patient!)
+### (Please note that this ReadMe file is not yet complete.  The intent is to provide you with all the instructions necessary to configure and deploy the DraftSimulator to your own Azure subscription, so please be patient!)
 
 # DraftSimulator
 This is the repo for the DraftSimulator demo described at https://channel9.msdn.com/Blogs/Breakpoint/An-End-to-End-Demo-of-VSTS and https://www.youtube.com/watch?v=07-G0GPWA0M.
