@@ -1,6 +1,12 @@
 ### (Please note that this ReadMe file is not yet complete.  The intent is to provide you with all the instructions necessary to configure and deploy the DraftSimulator to your own Azure subscription, so please be patient!)
 
 # DraftSimulator
+
+## LEGACY NOTE
+
+This repository is now legacy in that I am re-creating the application in .NET 6.  The .NET 6 version will be in the repository called "DraftSimulator" (i.e.:  what this repo used to be called).
+
+## OVERVIEW
 This is the repo for the DraftSimulator demo described at https://channel9.msdn.com/Blogs/Breakpoint/An-End-to-End-Demo-of-VSTS and https://www.youtube.com/watch?v=07-G0GPWA0M.
 
 ## What is the DraftSimulator?
